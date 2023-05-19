@@ -2,7 +2,7 @@
 
 namespace App\Domain\Contracts;
 
-interface ICourierAdabter
+interface ICourierAdapter
 {
     public function createShipment(array $data) : array;
 

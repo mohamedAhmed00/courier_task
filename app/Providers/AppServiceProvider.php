@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use App\Domain\Contracts\ICourierAdabterFactory;
+use App\Domain\Contracts\ICourierAdapterFactory;
 use App\Domain\Contracts\IShipmentService;
-use App\Domain\Factories\CourierAdabterFactory;
+use App\Domain\Factories\CourierAdapterFactory;
 use App\Domain\Services\ShipmentService;
 use Illuminate\Support\ServiceProvider;
 
@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->app->scoped(IShipmentService::class, ShipmentService::class);
-        $this->app->scoped(ICourierAdabterFactory::class, CourierAdabterFactory::class);
+        $this->app->scoped(ICourierAdapterFactory::class, CourierAdapterFactory::class);
     }
 }

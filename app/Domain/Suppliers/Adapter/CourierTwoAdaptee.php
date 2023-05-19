@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Domain\Suppliers\Adabter;
+namespace App\Domain\Suppliers\Adapter;
 
-use App\Domain\Contracts\ICourierAdabter;
+use App\Domain\Contracts\ICourierAdapter;
 use App\Domain\Contracts\ICourierTwo;
 use App\Domain\Suppliers\Integration\CourierTwo;
 
-class CourierTwoAdabtee implements ICourierAdabter
+class CourierTwoAdaptee implements ICourierAdapter
 {
     private ICourierTwo $courier;
     public function __construct()
